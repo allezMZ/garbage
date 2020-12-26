@@ -25,27 +25,27 @@
  * 19.valueOf
  **/
 
- //1.unshift
+ //1.unshift  首部添加元素
  let a = [1,2,3]
  a.unshift(0)
  console.log('unshift',a);
- //2.push
+ //2.push 尾部添加元素
  let b =[1,2,3]
  b.push(4)
  console.log('push',b);
- //3.shift
+ //3.shift  首部删除元素
  let c = [1,2,3]
  c.shift()
  console.log('shift',c);
- //4.pop
+ //4.pop··尾部删除元素
  let d = [1,2,3]
  d.pop()
  console.log('pop',d);
- //5.splice
+ //5.splice 选择任意位置删除或添加元素
  let e = [1,2,3,4,5]
  e.splice(2,2,11,22,33)
  console.log('e',e);
- //6.concat
+ //6.concat 数组的连接
  let f=[1,2,3]
  let f1=[4,5,6]
  console.log('concat',f.concat(f1));
@@ -57,7 +57,7 @@
  let g = [1,2,3,4,5]
  console.log('every',g.every(isEven));
  console.log('some',g.some(isEven));
-//9.forEach
+//9.forEach 迭代数组的每个元素
 let h = ['1','2','3','4']
 h.forEach((item)=>{
 console.log('forEach',item);
@@ -83,7 +83,6 @@ console.log('reverse',numbers.reverse());
 //16.sort 排序
 //16.1默认元素为字符串
 console.log('sort(String)',numbers.sort());
-// 1,10,11,12,13,2...
 //16.2将元素作为数字排序
 console.log('sort(number)',numbers.sort((a,b)=>a-b)  )
 //16.3用于自定义排序
@@ -103,7 +102,6 @@ function friendSort(a,b) {
 }
 friend.sort(friendSort)
 console.log('friend',friend);
-
 //17.indexOf 搜索  搜索到值返回对应的索引值(第一个元素)，未搜索到返回-1
 //18.lastIndexOf 搜索  搜索到值返回对应的索引值(最后一个元素)，未搜索到返回-1
 let x = [1,2,3,4,1,2,4,5]
